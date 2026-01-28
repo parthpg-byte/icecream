@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Sweet Scoops</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">🍦 <span class="logo-text">Sweet Scoops</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="cart.html" class="cart-icon">🛒 <span class="cart-count" style="display: none;">0</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <h2>Our <span class="highlight">Menu</span></h2>
+    <p>Browse our complete selection of premium ice cream flavors</p>
+    <div class="grid">
+      <div class="card">
+        <img src="images/img1.jpg" alt="Vanilla Dream" class="card-image">
+        <div class="card-content">
+          <div class="card-title">Vanilla Dream</div>
+          <div class="card-description">Classic creamy vanilla with Madagascar vanilla beans</div>
+          <div class="card-rating">★★★★★</div>
+          <div class="card-price">$4.99</div>
+          <button class="btn btn-primary" onclick="addToCart('vanilla', 'Vanilla Dream', 4.99, 'images/img1.jpg')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/img2.jpg" alt="Choco Paradise" class="card-image">
+        <div class="card-content">
+          <div class="card-title">Choco Paradise</div>
+          <div class="card-description">Rich Belgian chocolate with chocolate chunks</div>
+          <div class="card-rating">★★★★★</div>
+          <div class="card-price">$5.49</div>
+          <button class="btn btn-primary" onclick="addToCart('chocolate', 'Choco Paradise', 5.49, 'images/img2.jpg')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/img3.jpg" alt="Berry Bliss" class="card-image">
+        <div class="card-content">
+          <div class="card-title">Berry Bliss</div>
+          <div class="card-description">Fresh strawberry with real strawberry pieces</div>
+          <div class="card-rating">★★★★★</div>
+          <div class="card-price">$4.99</div>
+          <button class="btn btn-primary" onclick="addToCart('strawberry', 'Berry Bliss', 4.99, 'images/img3.jpg')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/img4.jpg" alt="Pistachio Perfection" class="card-image">
+        <div class="card-content">
+          <div class="card-title">Pistachio Perfection</div>
+          <div class="card-description">Creamy pistachio with natural pistachio flavor</div>
+          <div class="card-rating">★★★★★</div>
+          <div class="card-price">$5.99</div>
+          <button class="btn btn-primary" onclick="addToCart('pistachio', 'Pistachio Perfection', 5.99, 'images/img4.jpg')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/img5.jpg" alt="Mint Chocolate Chip" class="card-image">
+        <div class="card-content">
+          <div class="card-title">Mint Chocolate Chip</div>
+          <div class="card-description">Refreshing mint with dark chocolate chips</div>
+          <div class="card-rating">★★★★★</div>
+          <div class="card-price">$5.49</div>
+          <button class="btn btn-primary" onclick="addToCart('mint', 'Mint Chocolate Chip', 5.49, 'images/img5.jpg')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/img6.jpg" alt="Mango Tropical" class="card-image">
+        <div class="card-content">
+          <div class="card-title">Mango Tropical</div>
+          <div class="card-description">Tropical mango with exotic sweetness</div>
+          <div class="card-rating">★★★★★</div>
+          <div class="card-price">$5.99</div>
+          <button class="btn btn-primary" onclick="addToCart('mango', 'Mango Tropical', 5.99, 'images/img6.jpg')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Sweet Scoops. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
